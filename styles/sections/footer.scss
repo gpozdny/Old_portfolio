@@ -1,0 +1,87 @@
+.footer {
+  background-color: #414141;
+  @extend %clearfix ;
+  @include phones {
+    height: 100px;
+  }
+}
+
+.footer__left {
+  float: left;
+  padding-top: rem(7px);
+  @include phones {
+    float: none;
+    width:  100%;
+    text-align: center;
+  }
+}
+
+.copyright {
+  display: inline-block;
+}
+
+.copyright__text {
+  font-size: rem(14px);
+  color: rgb(156, 156, 156);
+  line-height: 2.857;
+}
+
+.footer__right {
+  float: right;
+  display: inline-block;
+  @include phones {
+    float: none;
+    width:  100%;
+    text-align: center;
+  }
+
+}
+
+.social__list {
+  padding-top: rem(10px);
+}
+
+.social__icons {
+  display: inline-block;
+}
+
+.social__link {
+  width: rem(32px);
+  height: rem(32px);
+  display: inline-block;
+  margin-left: rem(2px);
+  color: $darkgray;
+  background-color: #9c9c9c;
+  border-radius: 50%;
+  text-align: center;
+  transition: 0.3s;
+  .fa {
+    line-height: rem(30px);
+  }
+  &:hover {
+    color: white;
+    background-color: #507299;
+  }
+}
+
+.social__link_fb:hover  {
+  background-color: #3B5998;
+}
+
+.social__link_github:hover {
+  background-color: #000;
+}
+//@each $social in (vk, fb, tw) {
+//  .social__link_#{$social} {
+//    background: url('/src/assets/icons/#{$social}.png') 0 0 no-repeat;
+//
+//    &:hover {
+//      background: url('/src/assets/icons/#{$social}-hover.png') 0 0 no-repeat;
+//      transition: 0.3s;
+//    }
+//  }
+//}
+
+
+
+

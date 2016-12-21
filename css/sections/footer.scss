@@ -1,0 +1,50 @@
+.footer {
+	background-color: $darkgray;
+	@extend %clearfix ;
+}
+
+.footer__left {
+	float: left;
+	padding-top: 7px;
+}
+
+.copyright {
+	display: inline-block;
+}
+
+.copyright__text {
+  font-size: 14px;
+  color: rgb(156, 156, 156);
+  line-height: 2.857;
+}
+
+.footer__right {
+	float: right;
+	display: inline-block;
+
+}
+
+.socials {
+	padding-top: 10px;
+}
+
+.socials__icons {
+	display: inline-block;
+}
+
+.socials__link {
+	width: 32px;
+	height: 32px;
+	display: block;
+	margin-left: 2px;
+}
+
+@each $social in (vk, fb, tw) {
+	.socials__link_#{$social} {
+		background: url('/pics/icons/#{$social}.png') 0 0 no-repeat;
+		
+		&:hover {
+			background: url('/pics/icons/#{$social}-hover.png') 0 0 no-repeat;
+		}
+	}
+} 

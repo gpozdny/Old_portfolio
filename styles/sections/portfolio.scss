@@ -1,0 +1,56 @@
+.portfolio__item {
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  border-radius: rem(10px);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: rem(20px);
+  max-width: rem(220px);
+  margin-right: rem(14px);
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    .portfolio__bot-title {
+      color: $red;
+    }
+
+  }
+
+}
+
+.portfolio__top {
+  background-image: url("/assets/portfolio/hipsweet.png");
+  background-size: cover;
+  width: rem(220px);
+  height: rem(175px);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portfolio__bot-title {
+  color: $blue;
+  font-size: rem(21px);
+  margin: 0;
+}
+
+.portfolio__bot {
+  padding: rem(20px) rem(20px) rem(10px) rem(20px);
+}
+
+.portfolio__bot-desc {
+  font-size: rem(14px);
+  max-width: rem(220px);
+}
+
+.portfolio__bot-wrap {
+  font-size: rem(14px);
+  color: rgb(174, 174, 174);
+  padding-top: rem(10px);
+}
+
+.portfolio__desc  {
+  color: $fontgrey;
+}

@@ -1,0 +1,86 @@
+.content {
+	.container {
+		@extend %clearfix;
+	}
+}
+
+.page-content {
+	width: 700px;
+	float: right;
+	@include fira(regular);
+}
+
+.about {
+	padding-left: 32px;
+}
+
+
+.about__left {
+	float: left;
+}
+
+.about__right {
+	width: 380px;
+	// float: right;
+	margin-left: 43%;
+
+}
+
+.about__pic {
+	// padding-left: 32px;
+}
+
+.about__pic-image {
+	background-image: url(../pics/ava2.jpg);
+	background-size: cover;
+	background-position: 20%;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 50%;
+	border-color: white;
+	width: 220px;
+	height: 220px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.title {
+	font-size: 35px;
+	color: rgb(65, 65, 65);
+	padding-bottom: 0px;
+	margin: -8px 0 6px;
+}
+
+.about__description {
+	max-height: 300px;
+	overflow: auto;
+	font-size: 18px;
+	color: rgb(100, 100, 100);
+	line-height: 1.444;
+}
+
+.about__btns {
+	margin-top: 47px;
+	right: 100%;
+}
+
+.btn {
+	color: $red;
+	font-weight: bold;
+	padding: 7px 12px;
+	float: right;
+	@include inlineblock(middle);
+	border: 2px solid $red;
+	border-radius: 50px;
+	text-decoration: none;
+
+	&:hover {
+		color: $white;
+		background-color: $red;
+	}
+}
+
+.btn__text {
+	@include inlineblock(middle);
+}
+

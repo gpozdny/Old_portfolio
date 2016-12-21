@@ -1,0 +1,103 @@
+.wrapper {
+	background: $white;
+}
+
+.wrapper_auth {
+	width: auto;
+	min-width: 25%;
+}
+
+.container__auth	{
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+min-width: 310px;
+position: absolute;
+text-align: center;
+
+&:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+
+}
+
+.container-welcome {
+	width: 300px ;
+	display: inline-block;
+	border-radius: 10px;
+	vertical-align: middle;
+	background-color: white;
+	@include box-shadow(0px 1px 2px 0px rgba(0, 0, 0, 0.3))
+	@include fira()
+}
+
+.container-welcome__top {
+	max-width: 300px;
+}
+
+
+.container-welcome__ava {
+	display: inline-block;
+	background-size: cover;
+	background-position: 50%;
+	width: 140px;
+	height: 140px;
+	margin: -75px 0 0 -70px;
+  	border-width: 1px;
+  	border-color: rgb(215, 215, 215);
+  border-style: solid;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+.container-welcome__name {
+	position: relative;
+	padding: 80px 0px 20px 0px;
+	font-size: 21px;
+	line-height: 1.333;
+	max-width: 50%;
+    margin-left: 25%;
+	// max-width: 80px;
+}
+
+
+.container-welcome__bottom {
+	padding: 17px;
+  background-color: $blue;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+// .container-welcome__name-naming {
+// 	max-width: 100px;
+// }
+
+.button {
+	padding: 6px 12px;
+	text-decoration: none;
+	display: inline-block;
+	color: $white;
+	border: 2px solid white;
+	border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2;
+  text-align: center;
+}
+
+.button:hover {
+	background-color: white;
+	color: $blue;
+}
+
+
+
+
+

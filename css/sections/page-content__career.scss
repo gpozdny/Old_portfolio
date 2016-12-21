@@ -1,0 +1,155 @@
+
+.career-way__left {
+	width: 290px;
+	float: left;
+}
+
+.career-way__right {
+	float: right;
+	margin-right: 7.5%;
+}
+
+.career-way__title {
+	
+}
+
+.career-way__title-text {
+	margin: -5px auto;
+	margin-bottom: 18px;
+  font-size: 35px;
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+}
+
+.career-way__item {
+	text-align: right;
+	margin-bottom: 20px;
+
+	&:first-child {
+		.career-way__block {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	&:last-child {
+		.career-way__block {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.career-way__block {
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	padding: 20px;
+	color: $fontgrey;
+	min-width: 380px;
+	
+
+		&:before, &:after {
+		content: "";
+		display: block;
+		width: 1px;
+		background: #dddddd;
+		position: absolute;
+		left: -30px;
+	}
+
+	&:before {
+		top: 0;
+		bottom: 50%;
+		margin-bottom: 10px;
+	}
+
+	&:after {
+		bottom: -22px;
+		top: 50%;
+		margin-top: 10px;
+	}
+
+	&:hover  {
+		cursor: pointer;
+		color: $white;
+ 	 border-radius: 10px;
+  	background-color: $blue;
+  	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+
+  	.career-way__year	{
+  		  font-size: 18px;
+  color: $blue;
+  font-weight: bold;
+  	}
+}
+
+
+}
+
+.career-way__year {
+	font-size: 14px;
+	position: absolute;
+	right: 100%;
+	top: 50%;
+	line-height: 16px;
+	margin-top: -8px;
+	margin-right: 39px;
+
+	&:after {
+		content: "";
+		width: 10px;
+		height: 10px;
+		background: $blue;
+		border-radius: 50%;
+		position: absolute;
+		right: -14px;
+		top: 50%;
+		margin-top: -5px;
+		z-index: 1;
+
+	}
+
+	.career-way__text {
+		margin-right: 6px;
+	}
+
+	
+}
+
+.career-way__title	{
+	font-size: 23px;
+}
+
+.career-way__occupation {
+	font-size: 18px;
+	opacity: 0.8;
+}
+
+.about__pic--career	{
+	background-image: url(../pics/job.jpg);
+	background-size: cover;
+	border-radius: 9px;
+	border-color: white;
+	width: 220px;
+	height: 220px;
+	max-width: 100%;
+	max-height: 100%;
+
+}
+
+
+.career-way__list	{
+	max-width: 330px;
+}
+
+.career-way__block:hover .career-way__year:after {
+					border: solid 5px #93D6E6;
+					top: 3px;
+					right: -19px;
+}

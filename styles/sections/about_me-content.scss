@@ -1,0 +1,141 @@
+.content  {
+  float: left;
+  width: 77%;
+  @include fira(regular);
+  @include tablets  {
+    width: 100%;
+  }
+  @include phones {
+    width: 100%;
+  }
+}
+.content__left, .content__right {
+  float: left;
+  @include phones {
+    float: none;
+  }
+}
+
+.content__right {
+  width: 55%;
+  @include tablets  {
+    width: 53%;
+  }
+  @include phones {
+    width: 100%;
+  }
+
+}
+
+.content__left  {
+  width: 33%;
+  margin: 0 rem(35px);
+  @include tablets  {
+    width: 34%;
+  }
+  @include phones {
+    width: 100%;
+    margin: 0;;
+  }
+}
+
+.content__avatar {
+  background-image: url("/assets/ava2.jpg");
+  background-size: cover;
+  background-position: 20%;
+  border-style: solid;
+  border-width: rem(5px);
+  border-radius: 50%;
+  border-color: white;
+  width: rem(220px);
+  height: rem(220px);
+  max-width: rem(220px);
+  max-height: rem(220px);
+  margin-top: rem(-10px);
+
+
+  @include laptop {
+    max-width: rem(200px);
+    max-height: rem(200px);
+  }
+
+  @include tablets {
+    max-width: rem(170px);
+    max-height: rem(170px);
+}
+  @include phones  {
+    margin: 0px auto;
+  }
+}
+
+.content__title {
+  font-size: rem(35px);
+  color: rgb(65, 65, 65);
+  margin: rem(-10px) 0 rem(10px);
+  @include phones  {
+    text-align: center;
+    margin: rem(5px) 0;
+  }
+}
+
+.content__description {
+  max-height: rem(300px);
+  overflow: auto;
+  font-size: rem(18px);
+  color: rgb(100, 100, 100);
+  @include phones {
+    max-height: 300px;
+  }
+}
+
+.content__description li {
+  list-style-type: disc;
+}
+
+.content__description ul  {
+  padding-left: rem(20px);
+}
+
+.content__btn .fa {
+  margin-right: rem(5px);
+}
+
+.content__btn {
+  margin-top: rem(50px);
+  float: right;
+  @include phones {
+    float: left;
+  }
+}
+
+.btn__link {
+  color: $red;
+  font-weight: bold;
+  padding: rem(7px) rem(12px);
+  float: right;
+  @include inlineblock(middle);
+  border: rem(2px) solid $red;
+  border-radius: rem(50px);
+  text-decoration: none;
+
+  &:active  {
+    transform: translateY(rem(2px)) ;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    color: $white;
+    background-color: $red;
+  }
+}
+
+.mCSB_dragger {
+  margin-left: rem(20px);
+}
+//
+//.description__text-skills ul{
+//  padding-left: 20px;
+//  list-style: circle;
+//}
+
+

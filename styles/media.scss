@@ -1,0 +1,51 @@
+@media screen and (max-width: 1200px) { //hd
+	html {
+		font-size: 16px;
+	}
+
+	.container {
+		width: 970px;
+	}
+
+}
+
+@media screen and (max-width: 992px) { //laptop
+	html {
+		font-size: 15px;
+	}
+
+	.container {
+		width: 750px;
+	}
+
+	.content__avatar	{
+		max-width: rem(200px);
+		max-height: rem(200 px);
+	}
+
+}
+
+@media screen and (max-width: 768px) { //tablets
+	html {
+		font-size: 14px;
+	}
+
+	.container {
+		width: 480px;
+	}
+
+	.content__avatar	{
+		max-width: rem(130px);
+		max-height: rem(130px);
+	}
+}
+
+@media screen and (max-width: 480px) { //phones
+	html {
+		font-size: 12px;
+	}
+
+	.container {
+		width: auto;
+	}
+}

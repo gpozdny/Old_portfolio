@@ -1,0 +1,48 @@
+.content {
+	.container {
+		@extend %clearfix;
+	}
+}
+
+.sidebar {
+	@include float(left)
+	width: 216px;
+
+}
+
+.navigation__list {
+	text-align: right;
+}
+
+.navigation__item_active .navigation__link {
+	color: #33c1e3;
+    font-weight: 600;
+    border-right: 6px solid #33c1e3;
+    padding-right: 24px;
+}
+
+
+.navigation__link {
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	// line-height: 1.333;
+	display: block;
+	padding: 7px 26px 7px 0;
+	border-right: 6px solid transparent;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+
+.navigation__link-text {
+	display: inline-block;
+	@include fira(regular);
+}
+
+.fa {
+	padding-right: 5px;
+}
+

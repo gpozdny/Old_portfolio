@@ -1,0 +1,34 @@
+// variables
+
+$white: #f6f6f6;
+$blue: #33c1e3;
+$darkgray: #414141;
+$lblue: #32c3e5;
+$red: #e85f61;
+$fontgrey: #515153;
+ 
+ // imports
+ @import "mixins";
+ @import "fonts/fonts.scss";
+ @import "fonts/font-awesome";
+ @import "adjustment";
+ @import "normalize";
+ @import "jquery.mCustomScrollbar" ;
+
+ // section styles 
+ @import "welcome";
+ @import "sections/header";
+ @import "sections/footer";
+ @import "sections/sidebar";
+ @import "sections/page-content";
+ @import "sections/page-content__career";
+ @import "sections/page-content__portfolio";
+
+
+
+
+
+
+ // adaptive 
+
+ // @import "adaptive/media";
